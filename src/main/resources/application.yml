@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/appdb
+  main:
+    allow-bean-definition-overriding: true
+  jackson:
+    serialization:
+      indent_output: true
+  logging:
+    level:
+      root: INFO
+    pattern:
+      console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %-5level %logger - %msg%n"
+    file:
+      name: logs/application.log
