@@ -11,6 +11,10 @@ spring:
     level:
       root: INFO
     pattern:
-      console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %-5level %logger - %msg%n"
+      console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file:
       name: logs/application.log
+  security:
+    user:
+      name: admin
+      password: adminpass
