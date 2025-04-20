@@ -1,6 +1,6 @@
-package com.assignment.turknet.backend.repository;
+package com.assignment.turknet.backend.domain.repository;
 
-import com.assignment.turknet.backend.model.ActivityLog;
+import com.assignment.turknet.backend.domain.model.ActivityLog;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

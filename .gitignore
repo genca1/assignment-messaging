@@ -1,0 +1,49 @@
+/ .gitignore
+# Compiled class files
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+
+# Others
+.DS_Store
+*.swp
+*~
+
+# VS Code
+.vscode/
+
+# Environment files
+.env
+
+# Docker
+**/docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+!logs/.gitkeep
+
+/node_modules
+/bff/node_modules
+

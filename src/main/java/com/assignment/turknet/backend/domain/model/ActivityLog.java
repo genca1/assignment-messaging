@@ -1,4 +1,4 @@
-package com.assignment.turknet.backend.model;
+package com.assignment.turknet.backend.domain.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,6 +10,12 @@ public class ActivityLog {
     private String username;
     private String action;
     private long timestamp;
+
+    public ActivityLog(String username, String action, long toEpochSecond) {
+        this.username = username;
+        this.action = action;
+        this.timestamp = toEpochSecond;
+    }
 
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }

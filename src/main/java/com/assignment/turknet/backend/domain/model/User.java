@@ -1,4 +1,4 @@
-package com.assignment.turknet.backend.model;
+package com.assignment.turknet.backend.domain.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

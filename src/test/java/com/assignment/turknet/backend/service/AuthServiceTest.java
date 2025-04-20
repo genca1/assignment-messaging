@@ -1,14 +1,5 @@
 package com.assignment.turknet.backend.service;
 
-import com.assignment.turknet.backend.model.User;
-import com.assignment.turknet.backend.repository.ActivityLogRepository;
-import com.assignment.turknet.backend.repository.UserRepository;
-import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-
-import static org.junit.jupiter.api.Assertions.*;
 /*
 public class AuthServiceTests {
 

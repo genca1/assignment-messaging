@@ -1,7 +1,7 @@
-package com.assignment.turknet.backend.controller;
+package com.assignment.turknet.backend.api.controller;
 
-import com.assignment.turknet.backend.model.ActivityLog;
-import com.assignment.turknet.backend.repository.ActivityLogRepository;
+import com.assignment.turknet.backend.application.usecase.ActivityLogService;
+import com.assignment.turknet.backend.domain.model.ActivityLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,10 +14,10 @@ import java.util.List;
 @RequestMapping("/activity")
 public class ActivityLogController {
     @Autowired
-    private ActivityLogRepository logRepository;
+    private ActivityLogService activityLogService;
 
     @GetMapping("/{username}")
     public List<ActivityLog> getLogs(@PathVariable String username) {
-        return logRepository.findByUsername(username);
+        return activityLogService.getLogs(username);
     }
 }

@@ -1,7 +1,7 @@
-package com.assignment.turknet.backend.controller;
+package com.assignment.turknet.backend.api.controller;
 
-import com.assignment.turknet.backend.model.User;
-import com.assignment.turknet.backend.repository.UserRepository;
+import com.assignment.turknet.backend.domain.model.User;
+import com.assignment.turknet.backend.domain.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
